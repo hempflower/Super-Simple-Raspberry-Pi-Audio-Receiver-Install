@@ -169,7 +169,7 @@ EOT
 
 exc remove_dir /etc/pulsebackup
 exc sudo mkdir /etc/pulsebackup
-exc sudo cp /etc/pulse/* /etc/pulsebackup/
+exc sudo cp -r /etc/pulse/* /etc/pulsebackup/
 
 exc cd ~
 exc remove_dir pulseaudio
