@@ -173,11 +173,11 @@ exc sudo cp /etc/pulse/* /etc/pulsebackup/
 
 exc cd ~
 exc remove_dir pulseaudio
-exc git clone --branch v6.0 https://github.com/pulseaudio/pulseaudio
+exc git clone https://gitee.com/hempflower/pulseaudio.git
 
 exc cd ~
 exc remove_dir json-c
-exc git clone https://github.com/json-c/json-c.git
+exc git clone --branch json-c-0.13 https://gitee.com/hempflower/json-c.git
 exc cd json-c
 exc sh autogen.sh
 exc ./configure 
@@ -185,7 +185,7 @@ exc make
 exc sudo make install
 exc cd ~
 exc remove_dir libsndfile
-exc git clone git://github.com/erikd/libsndfile.git
+exc git clone https://gitee.com/hempflower/libsndfile.git
 exc cd libsndfile
 exc ./autogen.sh
 exc ./configure --enable-werror
